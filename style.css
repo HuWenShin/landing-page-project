@@ -49,6 +49,7 @@ a {
     flex-wrap: wrap-reverse;
     gap: 40px;
     color: #5c535e;
+    align-items: center;
 }
 
 .intro-left {
@@ -56,7 +57,7 @@ a {
 }
 
 .intro-left h1 {
-    margin: 16px 0;
+    margin: 32px 0;
 }
 
 .intro-img {
@@ -73,6 +74,7 @@ a {
     background-color: #7d428a;
     color: #fff;
     padding: 6px 16px;
+    margin: 32px 0;
 }
 
 /* intro button style */
