@@ -45,32 +45,86 @@ a {
 .intro {
     background-color: #f2cffa;
     display: flex;
-    padding: 60px;
+    padding: 100px;
     flex-wrap: wrap-reverse;
     gap: 40px;
     color: #5c535e;
 }
 
 .intro-left {
-    flex: 1 1 50%;
+    flex: 1;
 }
 
 .intro-left h1 {
     margin: 16px 0;
-    
 }
 
 .intro-img {
-    flex: 2 1 auto;
-    min-width: 400px;
+    flex: 2;
+}
+
+.intro-img > img {
     max-width: 100%;
-    border-radius: 50% 50%;
+    min-width: 400px;
+    border-radius: 50%;
 }
 
 .intro button {
     background-color: #7d428a;
     color: #fff;
     padding: 6px 16px;
+}
+
+/* intro button style */
+.button-50 {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-50:focus {
+  text-decoration: none;
+}
+
+.button-50:hover {
+  text-decoration: none;
+}
+
+.button-50:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-50:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-50 {
+    padding: 12px 50px;
+  }
 }
 
 /* informatoin */
@@ -132,15 +186,25 @@ a {
     padding: 32px;
     gap: 20px;
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cta .card .card-left {
+    flex: 2;
 }
 
 .cta h3 {
     margin: 16px 0;
 }
 
-.cta button {
+.cta .button-50 {
+    flex: 1;
     width: 160px;
     height: 50px;
+    background-color: #7d428a;
+    color: #fff;
+    padding: 12px;
 }
 
 /* footer */
